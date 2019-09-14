@@ -8,12 +8,12 @@ class Book {
       this.read = false;
   }
   
-    readBook(pageNumber) {
-      if (pageNumber <= 0 || pageNumber > this.pages) {
+    readBook(page) {
+      if (page <= 0 || page > this.pages) {
             alert(`Invalid page number, kindly enter a number between ${this.currentPage} - ${this.pages}`)
           }  else {
-            this.currentPage = pageNumber;
-            if (pageNumber == this.pages) {
+            this.currentPage = page;
+            if (page == this.pages) {
               alert( `Congratulations chief You have succesfully read ${this.title} by ${this.author}!`)
               this.read = !this.read // This changes the default Boolean to false
             } 
