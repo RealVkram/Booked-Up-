@@ -15,7 +15,7 @@ class Book {
             this.currentPage = pageNumber;
             if (pageNumber == this.pages) {
               alert( `Congratulations, You have succesfully read ${this.title} by ${this.author}!`)
-              this.read = !this.read
+              this.read = !this.read // This changes the default Boolean to false
             } 
           }
     } 
